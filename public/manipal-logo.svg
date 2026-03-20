@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 150" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap');
+      .m-blue { fill: #1c529b; font-family: 'Montserrat', sans-serif; }
+      .m-teal { fill: #1cb09c; font-family: 'Montserrat', sans-serif; }
+      .m-red { fill: #ce181e; font-family: 'Montserrat', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 'manipal' -->
+  <text x="10" y="80" class="m-blue" font-size="80" font-weight="500" letter-spacing="-3">manipal</text>
+  <!-- 'hospitals' -->
+  <text x="330" y="80" class="m-teal" font-size="80" font-weight="500" letter-spacing="-3">hospitals</text>
+  
+  <!-- LIFE'S ON -->
+  <text x="450" y="125" class="m-blue" font-size="32" font-weight="500" letter-spacing="1">LIFE'S ON</text>
+  
+  <!-- Red Cross Box -->
+  <rect x="600" y="100" width="28" height="28" class="m-red" rx="2" />
+  <g fill="#ffffff">
+    <!-- Quick dotted cross -->
+    <rect x="611" y="105" width="6" height="18" rx="1" />
+    <rect x="605" y="111" width="18" height="6" rx="1" />
+  </g>
+</svg>

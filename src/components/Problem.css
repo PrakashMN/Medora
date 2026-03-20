@@ -1,0 +1,100 @@
+.bg-light {
+  background-color: #f8fafc;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 9999px;
+  background-color: #fee2e2; /* Red-50 */
+  color: #b91c1c; /* Red-700 */
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.problem-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius-cards);
+  border: 1px solid #e2e8f0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: #cbd5e1;
+}
+
+.problem-icon-wrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background-color: var(--color-surface-slate);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.problem-icon-wrapper svg {
+  width: 36px;
+  height: 36px;
+  stroke: var(--color-primary);
+  stroke-width: 1.5;
+  transition: all 0.3s ease;
+}
+
+/* Add duotone accent to SVG icons */
+.problem-icon-wrapper svg path[opacity="0.4"], 
+.problem-icon-wrapper svg circle[opacity="0.4"],
+.problem-icon-wrapper svg rect[opacity="0.4"],
+.problem-icon-wrapper svg polyline[opacity="0.4"] {
+  fill: var(--color-accent);
+  stroke: none;
+  opacity: 0.15;
+}
+
+.problem-card:hover .problem-icon-wrapper {
+  background-color: var(--color-primary-light);
+  transform: scale(1.05);
+}
+
+.problem-card:hover .problem-icon-wrapper svg {
+  transform: scale(1.1);
+  stroke: var(--color-accent-dark);
+}
+
+.problem-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.problem-card-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

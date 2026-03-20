@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;display=swap');
+      .n-navy { fill: #1a2456; font-family: 'Playfair Display', serif; }
+    </style>
+  </defs>
+  
+  <!-- NIMHANS Main Text -->
+  <text x="400" y="100" text-anchor="middle" class="n-navy" font-size="110" font-weight="900" letter-spacing="6">NIMHANS</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="160" text-anchor="middle" class="n-navy" font-size="30" font-weight="700" letter-spacing="4">(INSTITUTE OF NATIONAL IMPORTANCE)</text>
+</svg>
