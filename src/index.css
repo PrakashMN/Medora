@@ -179,9 +179,10 @@ body {
 /* Utilities */
 .glass-effect {
   background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
+  will-change: backdrop-filter;
 }
 
 .gradient-bg {
@@ -191,6 +192,10 @@ body {
 
 .hero-gradient {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.bg-health-icon, .svg-pulse, .svg-float-1, .svg-float-2 {
+  will-change: transform, opacity;
 }
 
 .rounded-theme {
