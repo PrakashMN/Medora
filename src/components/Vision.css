@@ -1,0 +1,28 @@
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vision-headline {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--color-secondary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.vision-body {
+  font-size: 1.125rem;
+  color: var(--color-text-main);
+  line-height: 1.8;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .vision-headline {
+    font-size: 2rem;
+  }
+}

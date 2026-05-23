@@ -40,19 +40,18 @@
   top: -50%;
   left: -50%;
   background-image:
-    linear-gradient(rgba(46, 49, 146, 0.12) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(46, 49, 146, 0.12) 1px, transparent 1px);
+    linear-gradient(rgba(26, 155, 132, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 155, 132, 0.1) 1px, transparent 1px);
   background-size: 56px 56px;
   transform: perspective(500px) rotateX(45deg);
   animation: grid-move 22s linear infinite;
   opacity: 0.8;
 }
 
-/* dot grid overlay — clearly visible */
 .medical-dot-grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(46, 49, 146, 0.18) 1.2px, transparent 1.2px);
+  background-image: radial-gradient(circle, rgba(26, 155, 132, 0.15) 1.2px, transparent 1.2px);
   background-size: 32px 32px;
   opacity: 0.7;
 }

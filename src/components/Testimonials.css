@@ -3,8 +3,8 @@
 }
 
 .trust-badge {
-  background-color: #fef3c7; /* Amber-100 */
-  color: #b45309; /* Amber-700 */
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
 .testimonials-grid {
@@ -15,11 +15,11 @@
 }
 
 .testimonial-card {
-  background: white;
+  background: var(--color-bg);
   padding: 3.5rem 2.5rem;
   border-radius: var(--border-radius-cards);
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(0, 0, 0, 0.03); /* Whisper thin border */
+  border: 1px solid var(--color-divider);
   position: relative;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
 }
@@ -34,7 +34,7 @@
   top: 1.5rem;
   right: 2.5rem;
   font-size: 6rem;
-  color: rgba(22, 67, 156, 0.05); /* very faint primary */
+  color: rgba(26, 155, 132, 0.06);
   line-height: 1;
   font-family: Georgia, serif;
 }
@@ -104,9 +104,9 @@
   overflow: hidden;
   padding: 2rem 0;
   border-radius: var(--border-radius-cards);
-  background: white;
+  background: var(--color-bg);
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(0, 0, 0, 0.02);
+  border: 1px solid var(--color-divider);
   mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }

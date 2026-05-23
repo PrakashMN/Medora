@@ -14,18 +14,16 @@ const CTA = ({ onOpenWishlist }) => {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
           >
-            <h2 className="cta-title">Join the future of healthcare.</h2>
+            <h2 className="cta-title">Join the Future of Healthcare</h2>
             <p className="cta-subtitle">
-              Join the wishlist for early access to Medora&apos;s intelligent care platform and
-              launch updates.
+              Be part of a smarter, faster, and more connected healthcare ecosystem.
             </p>
-            <p className="cta-counter">25,748 people have joined the wishlist</p>
             <div className="cta-buttons">
               <button type="button" className="btn btn-white" onClick={onOpenWishlist}>
-                Join Wishlist
+                Get Started
               </button>
-              <a href="#testimonials" className="btn btn-outline-white">
-                See Social Proof
+              <a href="#solution" className="btn btn-outline-white">
+                Request Demo
               </a>
             </div>
             <div className="cta-decor circle-1"></div>

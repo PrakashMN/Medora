@@ -50,8 +50,11 @@ const Navbar = ({ onOpenWishlist }) => {
           <img src="/medora-logo.svg" alt="Medora Logo" className="navbar-logo-img" />
         </div>
         <div className="navbar-links desktop-links">
-          <a href="#problem" className={`nav-link ${activeSection === 'problem' ? 'active' : ''}`}>The Problem</a>
-          <a href="#solution" className={`nav-link ${activeSection === 'solution' ? 'active' : ''}`}>Solutions</a>
+          <a href="#solutions" className="nav-link">Solutions</a>
+          <a href="#about" className="nav-link">About</a>
+          <a href="#team" className="nav-link">Team</a>
+          <a href="#contact" className="nav-link">Contact</a>
+          <a href="#technology" className="nav-link">Technology</a>
           <a href="#how-it-works" className={`nav-link ${activeSection === 'how-it-works' ? 'active' : ''}`}>Process</a>
           <button type="button" className="btn btn-primary nav-btn" onClick={onOpenWishlist}>
             Get Started
@@ -66,8 +69,11 @@ const Navbar = ({ onOpenWishlist }) => {
       {/* Mobile Drawer */}
       <div className={`mobile-menu-drawer ${isMobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-links">
-          <a href="#problem" className={`mobile-nav-link ${activeSection === 'problem' ? 'active' : ''}`} onClick={toggleMobileMenu}>The Problem</a>
-          <a href="#solution" className={`mobile-nav-link ${activeSection === 'solution' ? 'active' : ''}`} onClick={toggleMobileMenu}>Solutions</a>
+          <a href="#solutions" className="mobile-nav-link" onClick={toggleMobileMenu}>Solutions</a>
+          <a href="#about" className="mobile-nav-link" onClick={toggleMobileMenu}>About</a>
+          <a href="#team" className="mobile-nav-link" onClick={toggleMobileMenu}>Team</a>
+          <a href="#contact" className="mobile-nav-link" onClick={toggleMobileMenu}>Contact</a>
+          <a href="#technology" className="mobile-nav-link" onClick={toggleMobileMenu}>Technology</a>
           <a href="#how-it-works" className={`mobile-nav-link ${activeSection === 'how-it-works' ? 'active' : ''}`} onClick={toggleMobileMenu}>Process</a>
           <button
             type="button"
