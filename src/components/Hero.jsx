@@ -53,44 +53,34 @@ const Hero = ({ onOpenWishlist }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <motion.span
-            className="section-badge"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <span className="hero-badge-dot" aria-hidden="true"></span>
-            Intelligent Care Infrastructure
-          </motion.span>
           <motion.h1
             className="hero-title"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Redefining <br /> Healthcare for Everyone <br />
-            <span className="text-primary">with AI.</span>
+            Building the <br /> Intelligence Layer <br />
+            <span className="text-primary">for Healthcare</span>
           </motion.h1>
           <motion.p
             className="hero-subtitle"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Medora connects records, providers, hospitals, and live care signals into one calm,
-            patient-centered platform.
+            A unified AI system that understands symptoms, medical data, and clinical conversations—delivering faster, smarter, and more accessible care.
           </motion.p>
           <motion.div
             className="hero-actions"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
           >
             <button type="button" className="btn btn-primary" onClick={onOpenWishlist}>
               Get Started
             </button>
             <a href="#solution" className="btn btn-outline">
-              Learn More
+              Book a Demo
             </a>
           </motion.div>
 
@@ -98,14 +88,9 @@ const Hero = ({ onOpenWishlist }) => {
             className="trust-badges"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
           >
-            <p className="trust-text">Trusted by leading hospitals</p>
-            <div className="trust-logos">
-              <img src="/kle-logo.svg" alt="KLE Ayurveda Hospital" className="trust-logo" />
-              <img src="/lake-logo.svg" alt="Lakeview Hospital" className="trust-logo" />
-              <img src="/manipal-logo.svg" alt="Manipal Hospitals" className="trust-logo" />
-            </div>
+            <p className="trust-text">Trusted by doctors and healthcare providers in pilot deployments</p>
           </motion.div>
         </motion.div>
       </div>
