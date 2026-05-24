@@ -79,7 +79,7 @@ const Hero = ({ onOpenWishlist }) => {
             <button type="button" className="btn btn-primary" onClick={onOpenWishlist}>
               Get Started
             </button>
-            <a href="#solution" className="btn btn-outline">
+            <a href="#contact" className="btn btn-outline">
               Book a Demo
             </a>
           </motion.div>

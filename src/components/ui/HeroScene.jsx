@@ -26,15 +26,15 @@ function HeroScene({ className = '' }) {
       */}
       {isInView && (
         <Canvas
-          camera={{ position: [0, 0.2, 4.2], fov: 45 }}
+          camera={{ position: [0, 0.9, 4.2], fov: 45 }}
           dpr={[1, 1.5]}
           gl={{ antialias: true, alpha: true }}
           style={{ background: 'transparent' }}
         >
           <ambientLight intensity={0.5} />
           <directionalLight position={[5, 5, 5]} intensity={1.0} color="#ffffff" />
-          <directionalLight position={[-3, 2, 4]} intensity={0.35} color="#00c0f3" />
-          <pointLight position={[0, -2, 3]} intensity={0.4} color="#2e3192" />
+          <directionalLight position={[-3, 2, 4]} intensity={0.35} color="#3BAE9B" />
+          <pointLight position={[0, -2, 3]} intensity={0.4} color="#1A9B84" />
           <Suspense fallback={null}>
             <MedoraBot />
             <Environment preset="city" environmentIntensity={0.25} />

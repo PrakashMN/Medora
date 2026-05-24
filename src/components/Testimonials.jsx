@@ -17,7 +17,7 @@ const Testimonials = () => {
           <span className="section-badge trust-badge">Trust & Safety</span>
           <h2 className="section-title">Trusted by doctors, hospitals, and patients.</h2>
           <p className="section-subtitle">
-            Join thousands of users who have already transformed their healthcare experience with Medora.
+            Join thousands of users who have already transformed their healthcare experience with Ayeeni healthtech.
           </p>
         </motion.div>
 

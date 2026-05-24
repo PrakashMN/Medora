@@ -201,8 +201,8 @@ const ContactPage = ({ onBack }) => {
               Join MEDORA and experience a smarter, more connected healthcare system.
             </p>
             <div className="contact-cta-actions">
-              <a href="#!" className="btn btn-primary">Get Started</a>
-              <a href="#!" className="btn btn-outline">Request Demo</a>
+              <a href="#join-wishlist" className="btn btn-primary">Get Started</a>
+              <a href="#solutions" className="btn btn-outline">Explore Solutions</a>
             </div>
           </motion.div>
         </div>

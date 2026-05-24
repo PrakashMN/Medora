@@ -40,12 +40,6 @@ const TechnologyPage = ({ onBack }) => {
             <ArrowLeft size={20} strokeWidth={1.5} />
             Back to Home
           </button>
-          <div className="tech-nav-links">
-            <a href="#tech-overview">Overview</a>
-            <a href="#tech-intelligence">Intelligence</a>
-            <a href="#tech-reasoning">Reasoning</a>
-            <a href="#tech-performance">Performance</a>
-          </div>
         </div>
       </nav>
 
@@ -64,7 +58,7 @@ const TechnologyPage = ({ onBack }) => {
             </p>
             <div className="tech-hero-actions">
               <a href="#tech-overview" className="btn btn-primary">Explore the Platform</a>
-              <a href="#!" className="btn btn-outline">Request Demo</a>
+              <a href="#join-wishlist" className="btn btn-outline">Request Demo</a>
             </div>
           </motion.div>
         </div>
@@ -434,8 +428,8 @@ const TechnologyPage = ({ onBack }) => {
               intelligent system.
             </p>
             <div className="tech-cta-actions">
-              <a href="#!" className="btn btn-primary">Request Demo</a>
-              <a href="#!" className="btn btn-outline">Get Started</a>
+              <a href="#join-wishlist" className="btn btn-primary">Request Demo</a>
+              <a href="#contact" className="btn btn-outline">Get Started</a>
             </div>
           </motion.div>
         </div>

@@ -28,6 +28,11 @@ const WishlistPage = ({ onBack }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    try {
+      const existing = JSON.parse(localStorage.getItem('ayeeni_wishlist') || '[]');
+      existing.push({ ...formData, joinedAt: new Date().toISOString() });
+      localStorage.setItem('ayeeni_wishlist', JSON.stringify(existing));
+    } catch {}
     setIsSubmitted(true);
   };
 
@@ -65,7 +70,7 @@ const WishlistPage = ({ onBack }) => {
                   <span className="wishlist-badge-dot" aria-hidden="true"></span>
                   Early Access
                 </span>
-                <h1 className="wishlist-title">Join Medora&apos;s wishlist before the next release.</h1>
+                <h1 className="wishlist-title">Join Ayeeni healthtech&apos;s wishlist before the next release.</h1>
                 <p className="wishlist-subtitle">
                   Share your details to reserve early access to a calmer, connected healthcare
                   experience powered by AI.
@@ -87,7 +92,7 @@ const WishlistPage = ({ onBack }) => {
                     <HeartPulse size={20} />
                     <div>
                       <h3>Priority onboarding</h3>
-                      <p>Get first access when Medora opens the next wave of invites.</p>
+                      <p>Get first access when Ayeeni healthtech opens the next wave of invites.</p>
                     </div>
                   </div>
                   <div className="wishlist-benefit">

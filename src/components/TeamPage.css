@@ -143,17 +143,18 @@
 }
 
 .team-member-card {
-  background: var(--color-bg);
+  background: #fff;
   padding: 2rem;
   border-radius: var(--border-radius-cards);
-  border: 1px solid var(--color-divider);
-  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-divider-accent);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
   transition: all 0.4s ease;
 }
 
 .team-member-card:hover {
   transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
+  box-shadow: 0 20px 50px rgba(26, 155, 132, 0.12);
+  border-color: var(--color-primary-light);
 }
 
 .team-member-avatar {

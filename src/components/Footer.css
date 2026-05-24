@@ -30,6 +30,29 @@
   margin-bottom: 4rem;
 }
 
+.footer-contact {
+  margin-top: 1.5rem;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+  color: var(--color-primary);
+}
+
 .footer-desc {
   color: var(--color-text-muted);
   line-height: 1.6;

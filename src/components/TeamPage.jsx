@@ -20,7 +20,11 @@ const teamMembers = [
     role: "Co-Founder & COO",
     avatar: "SM",
     desc: "Leads operations, strategy, and business development at ayeeni healthtech.",
-    highlights: []
+    highlights: [
+      "Drives operational strategy and business growth",
+      "Manages cross-functional team coordination",
+      "Focuses on healthcare partnerships and market expansion"
+    ]
   },
   {
     name: "Shadab Khan",
@@ -123,7 +127,7 @@ const TeamPage = ({ onBack }) => {
         </div>
       </section>
 
-      <section className="section-padding section-shell section-shell-cool">
+      <section className="section-padding section-shell section-shell-slate">
         <div className="container">
           <motion.h2
             className="team-section-title text-center mb-3"
@@ -266,8 +270,8 @@ const TeamPage = ({ onBack }) => {
               technology in healthcare.
             </p>
             <div className="team-cta-actions">
-              <a href="#!" className="btn btn-primary">Join the Team</a>
-              <a href="#!" className="btn btn-outline">Contact Us</a>
+              <a href="#contact" className="btn btn-primary">Join the Team</a>
+              <a href="#contact" className="btn btn-outline">Contact Us</a>
             </div>
           </motion.div>
         </div>

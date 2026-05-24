@@ -378,8 +378,8 @@ const AboutPage = ({ onBack }) => {
               for everyone.
             </p>
             <div className="about-cta-actions">
-              <a href="#!" className="btn btn-primary">Get Started</a>
-              <a href="#!" className="btn btn-outline">Contact Us</a>
+              <a href="#join-wishlist" className="btn btn-primary">Get Started</a>
+              <a href="#contact" className="btn btn-outline">Contact Us</a>
             </div>
           </motion.div>
         </div>

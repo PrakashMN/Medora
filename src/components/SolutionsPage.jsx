@@ -1,89 +1,157 @@
-import { ArrowLeft, Stethoscope, User, Building2, Share2, BarChart3, Activity, HeartPulse, BrainCircuit, FileText, Mic, CalendarCheck, Timer } from 'lucide-react';
+import { ArrowLeft, Bot, Database, Smartphone, BrainCircuit, FileText, Mic, FolderOpen, Building2, BarChart3, MessageSquareText, Pill, Activity, HeartPulse, Stethoscope, User, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './SolutionsPage.css';
 
-const patientActions = [
-  "Understand symptoms through AI-driven guidance",
-  "Receive personalized health insights",
-  "Book consultations with relevant specialists",
-  "Access and manage medical records",
-  "View reports, prescriptions, and history",
-  "Order medicines and book lab tests"
+const productStack = [
+  {
+    icon: <MessageSquareText size={28} strokeWidth={1.5} />,
+    title: "ayeeni TriageBot",
+    tagline: "Healthcare access as simple as a message",
+    desc: "The WhatsApp Bot acts as the first point of contact, allowing patients to describe symptoms in natural language. It intelligently analyzes inputs, suggests relevant departments, and connects users to the right care instantly.",
+    highlights: [
+      "AI-based symptom analysis",
+      "Department & doctor recommendations",
+      "Lab tests & medicine access",
+      "Instant, conversational interaction"
+    ]
+  },
+  {
+    icon: <Database size={28} strokeWidth={1.5} />,
+    title: "ayeeni EHR Core",
+    tagline: "The backbone of healthcare intelligence",
+    desc: "The EHR system connects patients, doctors, staff, labs, and pharmacies into one unified platform, ensuring real-time synchronization and complete patient visibility.",
+    highlights: [
+      "Patient, doctor, staff dashboards",
+      "Unified medical records",
+      "Workflow automation",
+      "Real-time data synchronization"
+    ]
+  },
+  {
+    icon: <Smartphone size={28} strokeWidth={1.5} />,
+    title: "ayeeni Patient App",
+    tagline: "Your complete healthcare companion",
+    desc: "The ayeeni Patient App empowers patients with a personalized dashboard to manage their entire health journey—from appointments to reports, medicines, and preventive care.",
+    highlights: [
+      "Appointment & consultation management",
+      "Report access & lab bookings",
+      "Medicine ordering & tracking",
+      "Health insights & reminders"
+    ]
+  }
 ];
 
-const patientBenefits = [
-  "Faster access to the right care",
-  "Better understanding of health conditions",
-  "No need to carry physical records",
-  "Continuous and connected care experience"
+const capabilities = [
+  {
+    icon: <BrainCircuit size={28} strokeWidth={1.5} />,
+    title: "AI Symptom Intelligence",
+    desc: "ayeeni healthtech uses a structured, clinically inspired questioning approach to understand patient symptoms in depth. By mimicking real clinical reasoning, the system identifies potential conditions early and guides users toward the right care pathway.",
+    enables: [
+      "Faster preliminary understanding of health conditions",
+      "Reduced unnecessary consultations",
+      "Early detection and better triage"
+    ]
+  },
+  {
+    icon: <FileText size={28} strokeWidth={1.5} />,
+    title: "Medical Data Understanding",
+    desc: "Our system processes and structures complex medical data—including prescriptions, lab reports, and diagnostic imaging—into clear, usable insights.",
+    enables: [
+      "Eliminates manual interpretation effort",
+      "Converts unstructured data into actionable information",
+      "Improves accuracy and reduces errors in understanding reports"
+    ]
+  },
+  {
+    icon: <Mic size={28} strokeWidth={1.5} />,
+    title: "Clinical Documentation Automation",
+    desc: "ayeeni healthtech captures doctor–patient conversations and converts them into structured clinical reports in real time, significantly reducing administrative workload.",
+    enables: [
+      "Faster and more accurate documentation",
+      "Reduced doctor burnout",
+      "Standardized, audit-ready clinical records"
+    ]
+  },
+  {
+    icon: <FolderOpen size={28} strokeWidth={1.5} />,
+    title: "Unified Health Records (EHR Backbone)",
+    desc: "All patient data—symptoms, consultations, prescriptions, reports, and follow-ups—is stored and connected in a single unified system.",
+    enables: [
+      "Complete patient history at one place",
+      "Seamless continuity of care across visits",
+      "Better clinical decision-making"
+    ]
+  },
+  {
+    icon: <Building2 size={28} strokeWidth={1.5} />,
+    title: "Integrated Healthcare Marketplace",
+    desc: "ayeeni healthtech connects patients directly to doctors, labs, pharmacies, and healthcare services within one platform.",
+    enables: [
+      "Faster access to healthcare services",
+      "Increased service utilization for providers",
+      "End-to-end patient journey within a single ecosystem"
+    ]
+  },
+  {
+    icon: <BarChart3 size={28} strokeWidth={1.5} />,
+    title: "Operational Intelligence & Efficiency",
+    desc: "By automating workflows, reducing manual tasks, and optimizing patient flow, ayeeni healthtech significantly improves operational efficiency across clinics and hospitals.",
+    enables: [
+      "Up to 30% increase in operational efficiency",
+      "Reduced administrative workload for healthcare providers",
+      "Faster patient handling and improved throughput",
+      "Higher revenue generation through increased patient capacity and optimized workflows"
+    ]
+  }
 ];
 
-const doctorActions = [
-  "Access complete patient history instantly",
-  "Generate structured reports from conversations",
-  "Write and manage digital prescriptions",
-  "Track patient progress and follow-ups",
-  "Review reports and insights in one dashboard"
-];
-
-const doctorBenefits = [
-  "Reduced documentation time",
-  "Improved clinical decision-making",
-  "Better patient context and continuity",
-  "Increased efficiency in daily workflow"
-];
-
-const hospitalActions = [
-  "Implement a unified EHR system",
-  "Connect patients, doctors, labs, and pharmacies",
-  "Automate workflows and administrative tasks",
-  "Monitor operations through real-time dashboards",
-  "Manage appointments, billing, and records centrally"
-];
-
-const hospitalBenefits = [
-  "Streamlined operations and reduced inefficiencies",
-  "Improved patient flow and service delivery",
-  "Centralized and secure data management",
-  "Increased revenue through optimized workflows"
-];
-
-const crossPlatformPoints = [
-  "Shared data across all modules",
-  "Real-time synchronization",
-  "Continuous care journey for patients",
-  "Better collaboration across healthcare providers"
-];
-
-const impactMetrics = [
-  "Up to 30% increase in operational efficiency",
-  "Reduced administrative workload",
-  "Faster patient processing and throughput",
-  "Higher revenue generation through improved capacity utilization"
+const connectSteps = [
+  "Patient enters via app or WhatsApp",
+  "AI analyzes symptoms and medical data",
+  "System recommends doctors and tests",
+  "Consultation and treatment recorded in EHR",
+  "Labs, pharmacy, and follow-ups integrated"
 ];
 
 const useCases = [
   {
     icon: <Activity size={28} strokeWidth={1.5} />,
-    title: "High-Volume Clinics",
-    desc: "Handle more patients efficiently without increasing workload"
+    title: "High-Volume OPD Doctors",
+    desc: "Access patient history instantly and manage consultations efficiently without increasing workload."
   },
   {
     icon: <HeartPulse size={28} strokeWidth={1.5} />,
-    title: "Chronic Care Management",
-    desc: "Maintain complete patient history for long-term treatment continuity"
+    title: "Chronic Disease Management",
+    desc: "Track patient history over time, ensuring consistent and accurate treatment."
   },
   {
     icon: <Mic size={28} strokeWidth={1.5} />,
-    title: "Teleconsultation & Follow-Ups",
-    desc: "Enable accurate remote care with full access to patient data"
+    title: "Teleconsultations",
+    desc: "Enable seamless follow-ups with complete access to previous prescriptions and reports."
+  }
+];
+
+const benefits = [
+  {
+    icon: <User size={28} strokeWidth={1.5} />,
+    title: "For Patients",
+    points: ["Faster access to care", "Better understanding of health", "Unified medical records"]
+  },
+  {
+    icon: <Stethoscope size={28} strokeWidth={1.5} />,
+    title: "For Doctors",
+    points: ["Reduced documentation burden", "Better patient context", "Improved decision-making"]
+  },
+  {
+    icon: <Building2 size={28} strokeWidth={1.5} />,
+    title: "For Hospitals",
+    points: ["Streamlined workflows", "Improved efficiency", "Centralized data management"]
   }
 ];
 
 const SolutionsPage = ({ onBack }) => {
   return (
     <div className="solutions-page">
-      {/* Navbar */}
       <nav className="solutions-nav">
         <div className="container solutions-nav-container">
           <button className="solutions-back" onClick={onBack}>
@@ -91,16 +159,15 @@ const SolutionsPage = ({ onBack }) => {
             Back to Home
           </button>
           <div className="solutions-nav-links">
-            <a href="#solutions-overview">Overview</a>
-            <a href="#solutions-patients">Patients</a>
-            <a href="#solutions-doctors">Doctors</a>
-            <a href="#solutions-hospitals">Hospitals</a>
+            <a href="#product-overview">Overview</a>
+            <a href="#product-stack">Products</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#use-cases">Use Cases</a>
           </div>
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="solutions-hero" id="solutions-hero">
+      <section className="solutions-hero" id="product-hero">
         <div className="container">
           <motion.div
             className="solutions-hero-content"
@@ -108,21 +175,20 @@ const SolutionsPage = ({ onBack }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <h1 className="solutions-hero-title">Solutions Built for the Entire Healthcare Ecosystem</h1>
+            <h1 className="solutions-hero-title">One Platform. Complete Healthcare Intelligence.</h1>
             <p className="solutions-hero-sub">
-              ayeeni healthtech delivers intelligent, connected solutions for patients, doctors, and
-              healthcare providers&mdash;transforming how care is accessed, delivered, and managed.
+              ayeeni healthtech is a unified AI-powered ecosystem that connects patients, doctors, and
+              healthcare services&mdash;transforming how care is delivered, managed, and experienced.
             </p>
             <div className="solutions-hero-actions">
-              <a href="#solutions-overview" className="btn btn-primary">Request Demo</a>
-              <a href="#solutions-patients" className="btn btn-outline">Explore Platform</a>
+              <a href="#join-wishlist" className="btn btn-primary">Request Demo</a>
+              <a href="#capabilities" className="btn btn-outline">Explore Features</a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Overview */}
-      <section className="section-padding section-shell section-shell-slate" id="solutions-overview">
+      <section className="section-padding section-shell section-shell-slate" id="product-overview">
         <div className="container">
           <motion.div
             className="solutions-overview-content"
@@ -131,202 +197,22 @@ const SolutionsPage = ({ onBack }) => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="solutions-section-title">One Platform. Multiple Stakeholders. Unified Impact.</h2>
+            <h2 className="solutions-section-title">A Unified Healthcare Ecosystem</h2>
             <p className="solutions-body-text">
-              Healthcare involves multiple participants&mdash;but most systems treat them separately.
-              ayeeni healthtech brings everyone onto a single platform, enabling seamless interaction,
-              better decision-making, and efficient workflows across the entire ecosystem.
+              ayeeni healthtech brings together every layer of healthcare into one intelligent
+              system&mdash;combining AI-driven insights, clinical workflows, and digital infrastructure.
+              From patient interaction to doctor decision-making and hospital operations, everything
+              is seamlessly connected.
             </p>
             <div className="solutions-keyline">
               <span className="solutions-keyline-dot" aria-hidden="true"></span>
-              Every stakeholder connected. Every interaction optimized.
+              No more fragmented tools. One system that does it all.
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* For Patients */}
-      <section className="section-padding section-shell section-shell-cool" id="solutions-patients">
-        <div className="container">
-          <div className="solutions-stakeholder-layout">
-            <motion.div
-              className="solutions-stakeholder-content"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="solutions-stakeholder-icon patients-icon">
-                <User size={32} strokeWidth={1.5} />
-              </div>
-              <h2 className="solutions-section-title">Smarter Healthcare, Made Simple</h2>
-              <p className="solutions-body-text">
-                ayeeni healthtech empowers patients with the tools and insights they need to
-                understand their health, access the right care, and manage their entire medical
-                journey in one place.
-              </p>
-
-              <h4 className="solutions-subheading">What Patients Can Do</h4>
-              <ul className="solutions-list">
-                {patientActions.map((item, i) => (
-                  <li key={i} className="solutions-list-item">{item}</li>
-                ))}
-              </ul>
-
-              <h4 className="solutions-subheading">Benefits</h4>
-              <div className="solutions-benefits-grid">
-                {patientBenefits.map((item, i) => (
-                  <div key={i} className="solutions-benefit-card">
-                    <span className="benefit-check">
-                      <CalendarCheck size={16} strokeWidth={2} />
-                    </span>
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-            <motion.div
-              className="solutions-stakeholder-visual"
-              initial={{ opacity: 0, scale: 0.9, x: 30 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="solutions-visual-box">
-                <User size={64} strokeWidth={1} className="visual-main-icon" />
-                <div className="visual-dots">
-                  {[...Array(12)].map((_, i) => (
-                    <span key={i} className="visual-dot" />
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* For Doctors */}
-      <section className="section-padding section-shell section-shell-slate" id="solutions-doctors">
-        <div className="container">
-          <div className="solutions-stakeholder-layout reverse">
-            <motion.div
-              className="solutions-stakeholder-visual"
-              initial={{ opacity: 0, scale: 0.9, x: -30 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="solutions-visual-box">
-                <Stethoscope size={64} strokeWidth={1} className="visual-main-icon" />
-                <div className="visual-dots">
-                  {[...Array(12)].map((_, i) => (
-                    <span key={i} className="visual-dot" />
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              className="solutions-stakeholder-content"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="solutions-stakeholder-icon doctors-icon">
-                <Stethoscope size={32} strokeWidth={1.5} />
-              </div>
-              <h2 className="solutions-section-title">Focus on Patients, Not Paperwork</h2>
-              <p className="solutions-body-text">
-                ayeeni healthtech reduces the administrative burden on doctors by automating
-                documentation and providing structured patient insights&mdash;allowing them to
-                focus on delivering better care.
-              </p>
-
-              <h4 className="solutions-subheading">What Doctors Can Do</h4>
-              <ul className="solutions-list">
-                {doctorActions.map((item, i) => (
-                  <li key={i} className="solutions-list-item">{item}</li>
-                ))}
-              </ul>
-
-              <h4 className="solutions-subheading">Benefits</h4>
-              <div className="solutions-benefits-grid">
-                {doctorBenefits.map((item, i) => (
-                  <div key={i} className="solutions-benefit-card">
-                    <span className="benefit-check">
-                      <CalendarCheck size={16} strokeWidth={2} />
-                    </span>
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* For Hospitals & Clinics */}
-      <section className="section-padding section-shell section-shell-cool" id="solutions-hospitals">
-        <div className="container">
-          <div className="solutions-stakeholder-layout">
-            <motion.div
-              className="solutions-stakeholder-content"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="solutions-stakeholder-icon hospitals-icon">
-                <Building2 size={32} strokeWidth={1.5} />
-              </div>
-              <h2 className="solutions-section-title">Transform Operations with Intelligent Systems</h2>
-              <p className="solutions-body-text">
-                ayeeni healthtech acts as a digital infrastructure layer for hospitals, enabling
-                seamless coordination across departments, improved data management, and optimized
-                operational workflows.
-              </p>
-
-              <h4 className="solutions-subheading">What Hospitals Can Do</h4>
-              <ul className="solutions-list">
-                {hospitalActions.map((item, i) => (
-                  <li key={i} className="solutions-list-item">{item}</li>
-                ))}
-              </ul>
-
-              <h4 className="solutions-subheading">Benefits</h4>
-              <div className="solutions-benefits-grid">
-                {hospitalBenefits.map((item, i) => (
-                  <div key={i} className="solutions-benefit-card">
-                    <span className="benefit-check">
-                      <CalendarCheck size={16} strokeWidth={2} />
-                    </span>
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-            <motion.div
-              className="solutions-stakeholder-visual"
-              initial={{ opacity: 0, scale: 0.9, x: 30 }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="solutions-visual-box">
-                <Building2 size={64} strokeWidth={1} className="visual-main-icon" />
-                <div className="visual-dots">
-                  {[...Array(12)].map((_, i) => (
-                    <span key={i} className="visual-dot" />
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Cross-Platform Advantage */}
-      <section className="section-padding section-shell section-shell-slate" id="solutions-cross-platform">
+      <section className="section-padding section-shell section-shell-cool" id="product-stack">
         <div className="container">
           <motion.div
             className="text-center"
@@ -335,81 +221,34 @@ const SolutionsPage = ({ onBack }) => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="solutions-section-title">More Than Individual Solutions&mdash;A Connected Ecosystem</h2>
-            <p className="solutions-body-text center max-w-680">
-              What makes ayeeni healthtech unique is not just what it offers to each stakeholder,
-              but how it connects them all. Every interaction&mdash;whether it&rsquo;s a symptom input,
-              consultation, or report upload&mdash;is part of a unified system that continuously learns
-              and improves.
-            </p>
+            <h2 className="solutions-section-title">Built as an Integrated System</h2>
           </motion.div>
-          <motion.div
-            className="solutions-cross-grid"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1, transition: { staggerChildren: 0.15 } }
-            }}
-          >
-            {crossPlatformPoints.map((point, i) => (
+          <div className="stack-grid">
+            {productStack.map((product, i) => (
               <motion.div
                 key={i}
-                className="solutions-cross-card"
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } }
-                }}
-              >
-                <span className="cross-card-icon">
-                  <Share2 size={20} strokeWidth={1.5} />
-                </span>
-                {point}
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Operational Impact */}
-      <section className="section-padding section-shell section-shell-cool" id="solutions-impact">
-        <div className="container">
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="solutions-section-title">Driving Efficiency Across the System</h2>
-            <p className="solutions-body-text center max-w-680">
-              By automating workflows, reducing manual tasks, and improving coordination,
-              ayeeni healthtech delivers measurable operational improvements.
-            </p>
-          </motion.div>
-          <div className="solutions-metrics-grid">
-            {impactMetrics.map((metric, i) => (
-              <motion.div
-                key={i}
-                className="solutions-metric-card"
-                initial={{ opacity: 0, y: 20 }}
+                className="stack-card"
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: i * 0.15 }}
               >
-                <span className="metric-icon">
-                  <BarChart3 size={20} strokeWidth={1.5} />
-                </span>
-                {metric}
+                <div className="stack-icon">{product.icon}</div>
+                <h3 className="stack-title">{product.title}</h3>
+                <p className="stack-tagline">{product.tagline}</p>
+                <p className="stack-desc">{product.desc}</p>
+                <ul className="stack-list">
+                  {product.highlights.map((h, j) => (
+                    <li key={j}>{h}</li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Real-World Use Cases */}
-      <section className="section-padding section-shell section-shell-slate" id="solutions-use-cases">
+      <section className="section-padding section-shell section-shell-slate" id="capabilities">
         <div className="container">
           <motion.div
             className="text-center"
@@ -418,7 +257,82 @@ const SolutionsPage = ({ onBack }) => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="solutions-section-title">Designed for Real Healthcare Scenarios</h2>
+            <h2 className="solutions-section-title">Key Capabilities</h2>
+          </motion.div>
+          <div className="capabilities-grid">
+            {capabilities.map((cap, i) => (
+              <motion.div
+                key={i}
+                className="capability-card"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <div className="capability-icon">{cap.icon}</div>
+                <h3 className="capability-title">{cap.title}</h3>
+                <p className="capability-desc">{cap.desc}</p>
+                <p className="capability-enables-label">What it enables:</p>
+                <ul className="capability-list">
+                  {cap.enables.map((e, j) => (
+                    <li key={j}>{e}</li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding section-shell section-shell-cool" id="how-it-connects">
+        <div className="container">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="solutions-section-title">A Seamless Healthcare Journey</h2>
+          </motion.div>
+          <div className="connect-flow">
+            {connectSteps.map((step, i) => (
+              <motion.div
+                key={i}
+                className="connect-step"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.12 }}
+              >
+                <span className="connect-step-num">{i + 1}</span>
+                <span className="connect-step-text">{step}</span>
+                {i < connectSteps.length - 1 && <span className="connect-arrow">&rarr;</span>}
+              </motion.div>
+            ))}
+          </div>
+          <motion.div
+            className="connect-closing"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            Every interaction is connected. Every decision is informed.
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="section-padding section-shell section-shell-slate" id="use-cases">
+        <div className="container">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="solutions-section-title">Designed for Real-World Healthcare</h2>
           </motion.div>
           <motion.div
             className="solutions-use-cases-grid"
@@ -448,8 +362,7 @@ const SolutionsPage = ({ onBack }) => {
         </div>
       </section>
 
-      {/* Why Medora */}
-      <section className="section-padding section-shell section-shell-cool" id="solutions-why">
+      <section className="section-padding section-shell section-shell-cool" id="benefits">
         <div className="container">
           <motion.div
             className="text-center"
@@ -458,17 +371,56 @@ const SolutionsPage = ({ onBack }) => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="solutions-section-title">A Foundation for the Future of Healthcare</h2>
+            <h2 className="solutions-section-title">What MEDORA Delivers</h2>
+          </motion.div>
+          <div className="benefits-grid">
+            {benefits.map((b, i) => (
+              <motion.div
+                key={i}
+                className="benefit-group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.15 }}
+              >
+                <div className="benefit-group-icon">{b.icon}</div>
+                <h3 className="benefit-group-title">{b.title}</h3>
+                <ul className="benefit-group-list">
+                  {b.points.map((p, j) => (
+                    <li key={j}>{p}</li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding section-shell section-shell-slate" id="solutions-why">
+        <div className="container">
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="solutions-section-title">More Than a Product&mdash;A Healthcare Infrastructure</h2>
             <p className="solutions-body-text center max-w-680">
-              ayeeni healthtech is not just a solution&mdash;it is a scalable infrastructure designed
-              to evolve with healthcare needs. By combining AI, real-world workflows, and connected
-              systems, it creates a platform that becomes more powerful with every interaction.
+              ayeeni healthtech is not built as a single solution&mdash;it is designed as a
+              foundational intelligence layer that powers the entire healthcare ecosystem. By combining
+              AI, workflows, and real-world data, it creates a system that continuously improves and
+              scales with usage.
             </p>
+            <div className="solutions-keyline" style={{ justifyContent: 'center' }}>
+              <Sparkles size={18} strokeWidth={1.5} />
+              MEDORA doesn&rsquo;t just digitize healthcare&mdash;it transforms how it operates,
+              making systems faster, smarter, and more profitable.
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Final CTA */}
       <section className="section-padding">
         <div className="container">
           <motion.div
@@ -478,22 +430,20 @@ const SolutionsPage = ({ onBack }) => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="solutions-cta-title">Ready to Transform Healthcare Delivery?</h2>
+            <h2 className="solutions-cta-title">Experience the Future of Healthcare</h2>
             <p className="solutions-cta-sub">
-              Join MEDORA and experience a smarter, faster, and more connected healthcare system.
+              See how ayeeni healthtech can transform your healthcare operations and patient experience.
             </p>
-            <div className="solutions-hero-actions">
-              <a href="#!" className="btn btn-primary">Book a Demo</a>
-              <a href="#!" className="btn btn-outline">Get Started</a>
+            <div style={{ textAlign: 'center' }}>
+              <a href="#join-wishlist" className="btn btn-primary">Book a Demo</a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Footer CTA */}
       <section className="solutions-footer-cta">
         <div className="container">
-          <p>Looking to partner with us? <a href="#contact">Contact Us</a></p>
+          <p>Have questions? Let&rsquo;s talk. <a href="#contact">Contact Us</a></p>
         </div>
       </section>
     </div>

@@ -31,7 +31,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="how-it-works-section section-padding section-shell section-shell-slate" id="how-it-works">
+    <section className="how-section section-padding section-shell section-shell-slate" id="how-it-works">
       <div className="container">
         <motion.div
           className="text-center mb-16"
@@ -43,40 +43,30 @@ const HowItWorks = () => {
           <h2 className="section-title">How ayeeni healthtech Works</h2>
         </motion.div>
 
-        <motion.div
-          className="timeline"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          variants={{
-            hidden: { opacity: 0 },
-            visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
-          }}
-        >
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.num}
-              className="timeline-item"
-              variants={{
-                hidden: { opacity: 0, y: 30 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
-              }}
-            >
-              <div className="timeline-number">{step.num}</div>
-              <div className="timeline-content">
-                <div className="timeline-icon">{step.icon}</div>
-                <h3 className="timeline-title">{step.title}</h3>
-                <p className="timeline-desc">{step.desc}</p>
-              </div>
-              {index < steps.length - 1 && (
-                <div className="timeline-connector">
-                  <div className="line"></div>
-                  <div className="arrow"></div>
+        <div className="how-steps">
+          <div className="how-steps-row">
+            {steps.map((step, index) => (
+              <div key={step.num} className="how-step-col">
+                <div className="how-step-badge-wrap">
+                  <div className="how-step-badge">{step.num}</div>
                 </div>
-              )}
-            </motion.div>
-          ))}
-        </motion.div>
+                <div className="how-step-card-outer">
+                  <motion.div
+                    className="how-step-card"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ duration: 0.5, delay: index * 0.15 }}
+                  >
+                    <div className="how-step-icon">{step.icon}</div>
+                    <h3 className="how-step-title">{step.title}</h3>
+                    <p className="how-step-desc">{step.desc}</p>
+                  </motion.div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );

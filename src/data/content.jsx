@@ -143,7 +143,7 @@ export const techStackData = [
 export const testimonialsData = [
   {
     id: 1,
-    quote: "Medora's AI assistant caught a potential drug interaction that my previous system missed. It's a game-changer for patient safety and clinical efficiency.",
+    quote: "Ayeeni healthtech's AI assistant caught a potential drug interaction that my previous system missed. It's a game-changer for patient safety and clinical efficiency.",
     author: "Dr. Sarah Chen",
     role: "Chief of Cardiology, Metro Hospital",
     avatarClass: "doctor-avatar"
@@ -152,7 +152,7 @@ export const testimonialsData = [
     id: 2,
     quote: "For the first time, I have all my medical records in one place. Being able to share them instantly with a new specialist saved me weeks of waiting.",
     author: "Michael Rodriguez",
-    role: "Medora Patient",
+    role: "Ayeeni healthtech Patient",
     avatarClass: "patient-avatar"
   }
 ];

@@ -46,9 +46,9 @@ const Navbar = ({ onOpenWishlist }) => {
   return (
     <nav className={`navbar glass-effect ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
-        <div className="navbar-logo">
-          <img src="/medora-logo.svg" alt="Medora Logo" className="navbar-logo-img" />
-        </div>
+        <a href="#" className="navbar-logo" onClick={(e) => { if (window.location.hash === '') e.preventDefault(); }}>
+          <img src="/medora-logo.svg" alt="Ayeeni healthtech Logo" className="navbar-logo-img" />
+        </a>
         <div className="navbar-links desktop-links">
           <a href="#solutions" className="nav-link">Solutions</a>
           <a href="#about" className="nav-link">About</a>
