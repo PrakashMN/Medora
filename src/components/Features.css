@@ -2,6 +2,10 @@
   padding-bottom: 6rem;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

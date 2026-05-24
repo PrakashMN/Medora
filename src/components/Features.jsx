@@ -37,7 +37,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="features-section pb-24 section-shell-cool">
+    <section className="features-section pt-24 pb-24 section-shell-cool">
       <div className="container">
         <motion.div
           className="text-center mb-16"
