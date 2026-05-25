@@ -25,7 +25,7 @@ const Footer = () => {
           >
             <img
               src="/medora-logo.svg"
-              alt="Medora Logo"
+              alt="Ayeeni Healthtech logo"
               className="footer-logo-img"
               style={{ height: '80px', marginBottom: '1rem', display: 'block' }}
             />

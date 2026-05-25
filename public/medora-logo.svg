@@ -1,47 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Inter:wght@400;500&amp;display=swap');
-      .blue-path { fill: none; stroke: #2b6ca3; stroke-width: 12; stroke-linejoin: round; stroke-linecap: round; }
-      .blue-hand { fill: none; stroke: #2b6ca3; stroke-linecap: round; }
-      .green-cross { fill: #51a04d; }
-      .text-medora { 
-        font-family: 'Cinzel', serif; 
-        font-size: 110px; 
-        fill: #51a04d; 
-        letter-spacing: 24px; 
-      }
-      .text-sub { 
-        font-family: 'Inter', sans-serif; 
-        font-size: 22px; 
-        fill: #333333; 
-        letter-spacing: 5px; 
-        font-weight: 500;
-      }
-    </style>
-  </defs>
-
-  <!-- Heartbeat -->
-  <path d="M 50 190 L 250 190 L 305 80 L 365 250 L 410 80 L 450 190 L 560 190" class="blue-path" />
-  
-  <!-- Hand swooping under and around -->
-  <path d="M 555 190 C 650 240, 770 220, 780 130 C 790 40, 690 30, 630 70" class="blue-hand" stroke-width="18" />
-  
-  <!-- Thumb swooping down -->
-  <path d="M 740 95 C 710 95, 690 110, 680 130" class="blue-hand" stroke-width="14" />
-
-  <!-- Green Cross -->
-  <g transform="translate(640, 130)">
-    <!-- Base Cross -->
-    <rect x="-18" y="-45" width="36" height="90" rx="10" class="green-cross" />
-    <rect x="-45" y="-18" width="90" height="36" rx="10" class="green-cross" />
-    <!-- Center white pill -->
-    <rect x="-8" y="-28" width="16" height="56" rx="8" fill="#ffffff" />
-    <line x1="-8" y1="0" x2="8" y2="0" stroke="#51a04d" stroke-width="3" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1745 630" fill="none" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Ayeeni Healthtech logo</title>
+  <desc id="logo-desc">Blue AYEENI wordmark with green accent dots and a green HEALTHTECH subtitle.</desc>
+  <g shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <circle cx="490" cy="46" r="47" fill="#26C37A" />
+    <circle cx="1700" cy="46" r="47" fill="#26C37A" />
+    <text
+      x="0"
+      y="420"
+      fill="#2300B7"
+      font-family="Arial Black, Arial, Helvetica, sans-serif"
+      font-size="392"
+      font-weight="900"
+      letter-spacing="-10"
+      lengthAdjust="spacingAndGlyphs"
+      textLength="1745"
+    >
+      AYEENI
+    </text>
+    <text
+      x="18"
+      y="610"
+      fill="#26C37A"
+      font-family="Georgia, Times New Roman, serif"
+      font-size="214"
+      font-weight="400"
+      letter-spacing="4"
+      lengthAdjust="spacingAndGlyphs"
+      textLength="1705"
+    >
+      HEALTHTECH
+    </text>
   </g>
-
-  <!-- Text -->
-  <!-- Shifted slightly right to account for letter-spacing offset -->
-  <text x="412" y="320" class="text-medora" text-anchor="middle">MEDORA</text>
-  <text x="400" y="365" class="text-sub" text-anchor="middle">COMPLETE CIRCLE OF CARE</text>
 </svg>
